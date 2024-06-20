@@ -1,0 +1,201 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Tailwind CSS base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Universal selector to remove padding and margin, and set box-sizing to border-box */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Setting base font size for the HTML element */
+html {
+  @apply text-[62.5%] scroll-smooth;
+}
+
+/* Base styles for the body element */
+body {
+  @apply text-[1.5rem] bg-white font-inter text-[#5d5f79];
+}
+
+/* Styles for h1 and button elements */
+h1,
+button {
+  @apply text-[#00001a];
+}
+
+/* Page container styles */
+.page-container {
+  @apply p-5 relative min-h-svh xs:p-10 sm:p-16 md:p-10 lg:container mx-auto md:py-16 lg:px-28;
+}
+
+/* Header styles */
+header {
+  @apply h-20 py-5 flex justify-between mb-4 md:mb-12;
+}
+
+/* Navigation logo styles */
+.nav-logo {
+  @apply max-h-16 h-full;
+}
+
+/* Logo image styles */
+.nav-logo > img {
+  @apply h-full;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  @apply absolute w-full right-0 top-0 bottom-0 z-10 bg-black/50 text-[#00001a] hidden md:block 
+  md:bg-transparent md:static md:right-auto md:top-auto md:bottom-auto md:text-[#5d5f79] md:h-full md:w-auto;
+}
+
+/* Styles for showing the navigation menu */
+.nav-menu.show {
+  @apply block;
+}
+
+/* Navigation styles */
+nav {
+  @apply absolute right-0 h-full w-[65%] bg-white p-10 md:static md:right-auto md:p-0;
+}
+
+/* Close navigation button styles */
+.close-nav {
+  @apply text-right mb-32 cursor-pointer md:hidden;
+}
+
+/* Navigation list styles */
+nav > ul {
+  @apply flex flex-col gap-6 font-semibold md:flex-row md:gap-10 md:font-normal lg:gap-14;
+}
+
+/* Navigation list item styles */
+nav > ul > li {
+  @apply hover:text-[#f15d50];
+}
+
+/* Navigation bar styles for mobile view */
+.nav-bar {
+  @apply cursor-pointer md:hidden;
+}
+
+/* Main content styles */
+main {
+  @apply grid grid-cols-1 gap-20 lg:grid-cols-3 md:gap-14;
+}
+
+/* Hero section styles */
+.hero {
+  @apply flex flex-col gap-8 md:gap-12 lg:col-span-2;
+}
+
+/* Hero content styles */
+.hero-content {
+  @apply flex flex-col gap-4 md:flex-row md:gap-8;
+}
+
+/* Hero title styles */
+.hero-title {
+  @apply text-[8vw] leading-[1] font-bold mr-32 md:mr-[6%] md:text-[4vw] md:w-1/2;
+}
+
+/* Hero text styles */
+.hero-text {
+  @apply flex flex-col gap-4 md:w-1/2 md:gap-10;
+}
+
+/* Hero button container styles */
+.hero-button {
+  @apply md:w-full;
+}
+
+/* Hero button styles */
+.hero-button button {
+  @apply bg-[#f15d50] uppercase px-8 py-3 font-semibold text-[1.2rem] md:px-10 md:py-5 hover:text-[#fffdfa] hover:bg-[#00001a];
+}
+
+/* Latest news section styles */
+.latest-news {
+  @apply bg-[#00001a] p-6 md:p-10;
+}
+
+/* Latest news section heading styles */
+.latest-news h2 {
+  @apply text-[#e9ab53] text-[2.2rem] font-semibold md:py-4;
+}
+
+/* Latest news article heading styles */
+.latest-news h3 {
+  @apply text-[#fffdfa] font-semibold hover:text-[#e9ab53];
+}
+
+/* Latest news article paragraph styles */
+.latest-news p {
+  @apply text-[#c5c6ce] text-[1.4rem];
+}
+
+/* Latest news article container styles */
+.latest-news > div {
+  @apply py-9 md:py-12;
+}
+
+/* Border styles for all latest news articles except the last one */
+.latest-news > div:not(:last-child) {
+  @apply border-b-[.5px] border-[#c5c6ce];
+}
+
+/* Tech news section container styles */
+#tech-news {
+  @apply flex flex-col gap-8 lg:flex-row lg:col-span-3 md:mt-8 lg:gap-4 xl:gap-8;
+}
+
+/* Individual tech news article styles */
+.tech-news {
+  @apply h-[12rem] flex gap-5 lg:gap-2 xl:gap-5;
+}
+
+/* Tech news image container styles */
+.tech-news-img {
+  @apply h-full max-w-[9rem] w-full;
+}
+
+/* Tech news image styles */
+.tech-news-img img {
+  @apply h-full w-full;
+}
+
+/* Tech news content container styles */
+.tech-news-content {
+  @apply flex flex-col gap-2 p-2;
+}
+
+/* Tech news article number styles */
+.tech-news-content h2 {
+  @apply text-[#f15d50] text-[1.8rem] font-semibold;
+}
+
+/* Tech news article heading styles */
+.tech-news-content h3 {
+  @apply font-semibold text-[#00001a] hover:text-[#f15d50];
+}
+
+/* Tech news article paragraph styles */
+.tech-news-content p {
+  @apply text-[1.3rem];
+}
+
+/* Attribution section styles */
+.attribution {
+  @apply text-[1.1rem] text-center;
+}
+
+/* Attribution link styles */
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

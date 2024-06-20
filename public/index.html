@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures the site is displayed properly based on the user's device -->
+
+    <!-- Favicon for the website -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Title of the webpage -->
+    <title>News homepage</title>
+
+    <!-- Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/127922d8a4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link to the Tailwind CSS stylesheet -->
+    <link rel="stylesheet" href="./tailwind.css" />
+  </head>
+  <body>
+    <!-- Main container for the page content -->
+    <div class="page-container">
+      <!-- Header section -->
+      <header>
+        <div class="nav-logo">
+          <!-- Logo of the website -->
+          <img src="./assets/images/logo.png" alt="logo" />
+        </div>
+
+        <div class="nav-menu">
+          <nav>
+            <div class="close-nav">
+              <!-- Close button for the navigation menu -->
+              <i class="fa-solid fa-xmark fa-2xl" id="close-nav"></i>
+            </div>
+            <ul>
+              <!-- Navigation links -->
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-bar">
+          <!-- menu icon for mobile view -->
+          <i class="fa-solid fa-bars fa-xl" id="nav-bar"></i>
+        </div>
+      </header>
+
+      <main>
+        <!-- Hero section -->
+        <section class="hero">
+          <div class="hero-img">
+            <picture class="block">
+              <!-- Responsive images for different screen sizes -->
+              <source
+                srcset="./assets/images/image-web-3-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <source srcset="./assets/images/image-web-3-desktop.jpg" />
+              <img
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="hero image"
+                class="w-full"
+              />
+            </picture>
+          </div>
+
+          <div class="hero-content">
+            <!-- Hero section content -->
+            <div class="hero-title">
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="hero-text">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+              <div class="hero-button">
+                <button>Read more</button>
+                <!-- Read more button -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest news section -->
+        <section class="latest-news">
+          <h2>New</h2>
+          <div class="l-news-1">
+            <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="l-news-2">
+            <h3><a href="#">The Downsides of AI Artistry</a></h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="l-news-3">
+            <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </section>
+
+        <!-- Tech news section -->
+        <section id="tech-news">
+          <div class="tech-news">
+            <div class="tech-news-img">
+              <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
+            </div>
+            <div class="tech-news-content">
+              <h2>01</h2>
+              <h3><a href="#">Reviving Retro PCs</a></h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="tech-news">
+            <div class="tech-news-img">
+              <img
+                src="./assets/images/image-top-laptops.jpg"
+                alt="Top Laptops"
+              />
+            </div>
+            <div class="tech-news-content">
+              <h2>02</h2>
+              <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="tech-news">
+            <div class="tech-news-img">
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                alt="Gaming"
+              />
+            </div>
+            <div class="tech-news-content">
+              <h2>03</h2>
+              <h3><a href="#">The Growth of Gaming</a></h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer section -->
+      <footer>
+        <div class="attribution mt-10">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://www.linkedin.com/in/adebowaleemmanuel"
+            target="_blank"
+            >Damilola Emmanuel</a
+          >.
+          <!-- Attribution to Frontend Mentor and the coder -->
+        </div>
+      </footer>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="./script.js"></script>
+  </body>
+</html>
